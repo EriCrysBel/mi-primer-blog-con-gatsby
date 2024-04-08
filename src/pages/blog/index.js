@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import Layout from '../../components/layout'
+import Seo from '../../components/seo'
 
 export const query = graphql`
     query {
@@ -17,8 +17,7 @@ export const query = graphql`
 }
 `
 const Blog = ({data}) =>{
-    const nombre = "Doraemon"
-    
+
     return (
         <Layout pageTitle='Blog'>
         {data.allMdx.nodes.map(node => 

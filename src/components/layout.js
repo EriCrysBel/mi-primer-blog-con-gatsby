@@ -32,13 +32,14 @@ return (
         <li className={navLinkItem}><Link className={navLinkText} to="/">Home</Link></li>
         <li className={navLinkItem}><Link className={navLinkText} to="/sobremi">Sobre Mi</Link></li>
         <li className={navLinkItem}><Link className={navLinkText} to="/blog">Blog</Link></li>
-        <li className={navLinkItem}><a className={navLinkText} href='https://github.com/carolinacc2323'>Github</a></li>
+        <li className={navLinkItem}><Link className={navLinkText} to="/donde-estamos">Dónde estamos</Link></li>
     </ul>
     </nav>
     <main>
     <h1 className={heading}>{pageTitle}</h1>
     {children}
-    <footer><p className='footer'>&copy; Erika {new Date().getFullYear()}</p></footer>
+    <footer><p className='footer'>&copy; Erika {new Date().getFullYear()} <a className={navLinkText} href='https://github.com/ericrysbel'>Github</a></p></footer>
+    
     </main>
 </div>
 )
