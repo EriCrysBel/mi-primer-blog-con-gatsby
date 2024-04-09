@@ -25,7 +25,7 @@ const Blog = ({data}) =>{
         <p>{node.frontmatter.date}</p>
         <h2>{node.frontmatter.title}</h2>
         <button> 
-            <Link to={`/blog/${node.frontmatter.slug}`}> </Link> 
+            <Link to={`/blog/${node.frontmatter.slug}`}> Leer más</Link> 
         </button>
         <hr>
         </hr>
